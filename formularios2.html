@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Ejemplo formularios 2 </title>
+</head>
+<body>
+<form action="html5-formularios.html" method="get" autocompLete>
+    <h3>text</h3>
+    <label form="nombre">Nombre:</label>
+    <input name="nombre" type="text" value="" readonly disabled size="40" maxlength="10" pattern="[A-Za-z]{3}"
+    placeholder="First name">
+    <h3>radio</h3>
+    <input type="radio" name="gender" value="male" checked> Male 
+    <br>
+    <input type="radio" name="gender" value="female"> Female
+    <br>
+    <input type="radio" name="gender" value="other"> Other 
+    <h3>select</h3>
+    <label form="cars">cars:</label>
+    <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    <h3>textarea</h3>
+    <textarea name="message" rows="10" cols = "30">
+     The cat was playing in the garden.
+    </textarea>
+         <h3>datalist</h3>
+         <label for="nombre">Navegador</label>
+         <input list="browsers">
+         <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+            <option value="Opera">   
+        <option value="Safari">
+        </datalist>
+        <h3>password</h3>
+        <label for="password">Keyword:</label> 
+        <input type="password" name="psw" required>
+        <br/>
+        URL:
+        <input
+          type="url"
+          name="url_control"
+          placeholder="Escribe la URL de tu pagina web personal"
+          />
+          <br />
+          Fecha: <input type="date" name="date_control" />
+          <br />
+          Tiempo: <input type="time" name="time_control" />
+          <br />
+          Fecha y hora de nacimiento:
+          <input type="datetime" name="week_control" />
+          <br />
+          Mes: <input type="month" name="month_control" />
+          <br />
+          Semana: <input type="week" name="week_control"/>
+          <br />
+          Numero (min -10, max 10):
+          <input
+           type="number"
+           name="number_control"
+           min="-10"
+           max="10"
+           value="0"
+           />
+           <br />
+           Intervalo (min 0,max 10):
+           <input type="range" name="range_control" min="0" max="10" value="0"/>
+           <output for="range_control" name="range_control_value">0</output>
+           <br />
+           Telefono: <input type="tel" name="tel_control" />
+           <br />
+           Termino de busqueda: <input type"search" name="search_control" />
+           <br />
+           Color Favorito: <input type="color" name="color_control" />
+           <br />
+           <input type="submit" value="Submit!" />
+           </p>
+           </form>
+           </body>
+           </html>
